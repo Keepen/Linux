@@ -34,9 +34,14 @@ class TcpSocket{
       return true;
     }
 
-    int GetFd(){
+    int const GetFd(){
       return _sockfd;
     }
+
+    void SetFd(int fd){
+      _sockfd = fd;
+    }
+
     //2.为套接字绑定地址信息
     bool Bind(string& ip, uint16_t port){
       sockaddr_in addr;

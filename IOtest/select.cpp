@@ -6,7 +6,9 @@
 int main(){
   //对标准输入进行监控
 
+  //定义可读事件描述符集合
   fd_set rfds;
+  //初始化清空集合
   FD_ZERO(&rfds);
 
   while(1){
